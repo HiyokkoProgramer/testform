@@ -15,45 +15,47 @@
 <form action="{{ url('form/complete') }}" method="post">
     @csrf
     <dl>
-        <dt>企業名、団体名：</dt>
+        <dd>企業名、団体名</dd>
         <dd>
             {{$group}}
         </dd>
     </dl>
     <dl>
-        <dt>お名前：</dt>
+        <dd>お名前</dd>
         <dd>
             {{$username}}
         </dd>
     </dl>
 
     <dl>
-        <dt>年齢：</dt>
+        <dd>年齢</dd>
         <dd>
             {{$age}}歳
         </dd>
     </dl>
 
     <dl>
-        <dt>電話番号：</dt>
+        <dd>電話番号</dd>
         <dd>
             {{$tel}}
         </dd>
     </dl>
     <dl>
-        <dt>Email：</dt>
+        <dd>Email</dd>
         <dd>
             {{$mail}}
         </dd>
     </dl>
 
     <dl>
-        <dt>お問い合わせ内容：</dt>
+        <dd>お問い合わせ内容</dd>
         <dd>
             {{$opinion}}
         </dd>
-
-        <div><input type="submit" name="button2" value="送信" /></div>
-    </form>
+    </dl>
+    <dl>
+        <dd><input type="submit" name="button2" value="送信" /></dd>
+    </dl>
+</form>
 </body>
 </html>

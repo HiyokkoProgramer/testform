@@ -22,3 +22,10 @@ Route::get('/form', function () {
 Route::post('/form/confirm','Formcontroller@confirm');
 
 Route::post('/form/complete','Formcontroller@store');
+
+//Route::get('hello',function(){
+//    return '<html><body><h1>Hello</h1><p>sample page</p></body></html>';
+//});
+
+Route::get('hello','HelloController@index');
+Route::post('hello','HelloController@post');
