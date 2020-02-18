@@ -26,9 +26,9 @@
     {{--@include('components.message',['msg_title' =>'OK','msg_content'=>'サブビューです'])--}}
 
     {{--//eachによる表示--}}
-    @each('components.item',$data,'item')
+    {{--@each('components.item',$data,'item')--}}
 
-
+    <p>ViewComposer value <br>'View_message' = {{$view_message}}</p>
 @endsection
 
 @section('footer')
