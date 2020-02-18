@@ -11,6 +11,7 @@
     <p>ここが本文のコンテンツです。</p>
     <p>必要な分だけ記述できます。</p>
 
+    {{--//コンポーネントの表示--}}
     {{--@component('components.message')--}}
         {{--@slot('msg_title')--}}
             {{--CAUTION!--}}
@@ -21,7 +22,12 @@
         {{--@endslot--}}
     {{--@endcomponent--}}
 
-    @include('components.message',['msg_title' =>'OK','msg_content'=>'サブビューです'])
+    {{--//サブビュー--}}
+    {{--@include('components.message',['msg_title' =>'OK','msg_content'=>'サブビューです'])--}}
+
+    {{--//eachによる表示--}}
+    @each('components.item',$data,'item')
+
 
 @endsection
 
