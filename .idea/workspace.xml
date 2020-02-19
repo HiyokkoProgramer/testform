@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53a84796-8fcf-4c64-9015-d3070e8177db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -576,12 +574,20 @@
       <workItem from="1575966210327" duration="59297000" />
       <workItem from="1577490897691" duration="25690000" />
       <workItem from="1579917105715" duration="846000" />
-      <workItem from="1581155966277" duration="37438000" />
+      <workItem from="1581155966277" duration="37557000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit form phpstorm">
+      <created>1582092790738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582092790739</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123271000" />
+    <option name="totallyTimeSpent" value="123390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,6 +647,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit form phpstorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit form phpstorm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
