@@ -28,7 +28,7 @@ Route::post('/form/complete','Formcontroller@store');
 //});
 
 Route::get('hello','HelloController@index')
-    ->middleware(HelloMiddleware::class);
+    ->middleware('hello');
 
 
 Route::post('hello','HelloController@post');
