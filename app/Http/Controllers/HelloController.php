@@ -16,7 +16,7 @@ class HelloController extends Controller
 //                ['name'=>'田中幸子','mail'=>'sachiko@tanaka'],
 //                ['name'=>'鈴木一郎','mail'=>'ichiro@suzuki']
 //            ];
-        return view('hello.index',['data'=>$request->data]);
+        return view('hello.index');
     }
 
     public function post(Request $request){
