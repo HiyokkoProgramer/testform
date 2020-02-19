@@ -28,7 +28,16 @@
     {{--//eachによる表示--}}
     {{--@each('components.item',$data,'item')--}}
 
-    <p>ViewComposer value <br>'View_message' = {{$view_message}}</p>
+    {{--//ビューコンポーザで表示--}}
+    {{--<p>ViewComposer value <br>'View_message' = {{$view_message}}</p>--}}
+
+    //ミドルウェアによる表示
+    <table>
+        @foreach($data as $item)
+            <tr><th>{{$item['name']}}</th><td>{{$item['mail']}}</td></tr>
+        @endforeach
+    </table>
+
 @endsection
 
 @section('footer')

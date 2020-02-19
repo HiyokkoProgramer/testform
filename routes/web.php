@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Middleware\HelloMiddleware;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,5 +27,8 @@ Route::post('/form/complete','Formcontroller@store');
 //    return '<html><body><h1>Hello</h1><p>sample page</p></body></html>';
 //});
 
-Route::get('hello','HelloController@index');
+Route::get('hello','HelloController@index')
+    ->middleware(HelloMiddleware::class);
+
+
 Route::post('hello','HelloController@post');
