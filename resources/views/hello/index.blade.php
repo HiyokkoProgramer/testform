@@ -44,21 +44,53 @@
 
     //バリデーション
     <p>{{$msg}}</p>
-    @if(count($errors) > 0)
-        <div>
-            <ul>
-                @foreach($errors ->all() as $error)
-                    <li>{{$error}}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    {{--@if(count($errors) > 0)--}}
+        {{--<div>--}}
+            {{--<ul>--}}
+                {{--@foreach($errors ->all() as $error)--}}
+                    {{--<li>{{$error}}</li>--}}
+                {{--@endforeach--}}
+            {{--</ul>--}}
+        {{--</div>--}}
+    {{--@endif--}}
     <table>
         <form action="/hello" method="post">
             {{csrf_field()}}
+            @if($errors ->has('name'))
+                <tr><th>ERROR:</th><td>{{$errors -> first('name')}}</td></tr>
+            @endif
             <tr><th>name:</th><td><input type="text" name="name" value="{{old('name')}}"></td></tr>
+
+            @if($errors ->has('mail'))
+                <tr><th>ERROR:</th><td>{{$errors -> first('mail')}}</td></tr>
+            @endif
             <tr><th>mail:</th><td><input type="text" name="mail" value="{{old('mail')}}"></td></tr>
+
+            @if($errors ->has('age'))
+                <tr><th>ERROR:</th><td>{{$errors -> first('age')}}</td></tr>
+            @endif
             <tr><th>age:</th><td><input type="text" name="age" value="{{old('age')}}"></td></tr>
+
+            {{--@if($errors ->has('male'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('male')}}</td></tr>--}}
+            {{--@elseif($errors ->has('female'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('female')}}</td></tr>--}}
+            {{--@endif--}}
+            {{--<tr><th>性別:</th>--}}
+                {{--<td><p>男</p><input type="checkbox" name="male" value="{{old('male')}}"></td>--}}
+                {{--<td><p>女</p><input type="checkbox" name="female" value="{{old('female')}}"></td>--}}
+            {{--</tr>--}}
+
+            @if($errors ->has('siteurl'))
+                <tr><th>ERROR:</th><td>{{$errors -> first('siteurl')}}</td></tr>
+            @endif
+            <tr><th>siteurl:</th><td><input type="text" name="siteurl" value="{{old('siteurl')}}"></td></tr>
+
+            @if($errors ->has('password'))
+                <tr><th>ERROR:</th><td>{{$errors -> first('password')}}</td></tr>
+            @endif
+            <tr><th>password:</th><td><input type="password" name="password" value="{{old('password')}}"></td></tr>
+
             <tr></th><td><input type="submit" value="send"></td></tr>
         </form>
     </table>
