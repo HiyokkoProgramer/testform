@@ -27,8 +27,8 @@ Route::post('/form/complete','Formcontroller@store');
 //    return '<html><body><h1>Hello</h1><p>sample page</p></body></html>';
 //});
 
-Route::get('hello','HelloController@index')
-    ->middleware('hello');
+Route::get('hello','HelloController@index');
+//    ->middleware('hello');
 
 
 Route::post('hello','HelloController@post');

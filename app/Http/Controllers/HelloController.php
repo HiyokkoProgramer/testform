@@ -16,13 +16,20 @@ class HelloController extends Controller
 //                ['name'=>'田中幸子','mail'=>'sachiko@tanaka'],
 //                ['name'=>'鈴木一郎','mail'=>'ichiro@suzuki']
 //            ];
-        return view('hello.index');
+        return view('hello.index',['msg'=>'フォームを入力']);
     }
 
     public function post(Request $request){
-        $name= $request->name;
 
-        return view('hello.index',['name'=>$request->name]);
+        $validate_rule =[
+            'name' =>'required',
+            'mail'=>'email',
+            'age' =>'numeric | between:0,150',
+        ];
+        $this->validate($request,$validate_rule);
+//        $name= $request->name;
+
+        return view('hello.index',['msg'=>'正しく入力されました！']);
     }
 
 }
