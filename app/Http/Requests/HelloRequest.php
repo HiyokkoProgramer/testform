@@ -30,7 +30,21 @@ class HelloRequest extends FormRequest
             'male'=>'accept',
             'female'=>'accept',
             'siteurl'=>'url',
-            'password'=>'alpha-dash |alpha-num',
+            'pass'=>'alpha-dash |alpha-num',
         ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => '名前は必ず入力してください',
+            'mail.email' => 'メール形式で入力してください',
+            'numeric' => '数字で入力してください',
+            'between' => '年齢は0〜150才の間で入力してください',
+            'url' => 'url形式で入力してください',
+            'pass.alpha-dash' => 'アルファベットとハイフン、アンダースコアで入力してください',
+            'pass.alpha-num' => 'アルファベットと数字で入力してください'
+        ];
+
     }
 }

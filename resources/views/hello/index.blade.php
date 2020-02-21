@@ -86,10 +86,10 @@
             @endif
             <tr><th>siteurl:</th><td><input type="text" name="siteurl" value="{{old('siteurl')}}"></td></tr>
 
-            @if($errors ->has('password'))
-                <tr><th>ERROR:</th><td>{{$errors -> first('password')}}</td></tr>
+            @if($errors ->has('pass'))
+                <tr><th>ERROR:</th><td>{{$errors -> first('pass')}}</td></tr>
             @endif
-            <tr><th>password:</th><td><input type="password" name="password" value="{{old('password')}}"></td></tr>
+            <tr><th>password:</th><td><input type="password" name="pass" value="{{old('pass')}}"></td></tr>
 
             <tr></th><td><input type="submit" value="send"></td></tr>
         </form>
