@@ -20,7 +20,12 @@ class HelloController extends Controller
 //                ['name'=>'鈴木一郎','mail'=>'ichiro@suzuki']
 //            ];
 
-        $items=DB::select('select * from people');
+        if(isset($request->id)){
+            $param = ['id' => $request->id];
+            $items=DB::select('select * from people where id =:id',$param);
+        }else{
+            $items=DB::select('select * from people');
+        }
 
         return view('hello.index',['items'=>$items]);
     }
@@ -52,6 +57,22 @@ class HelloController extends Controller
             }
 
         return view('hello.index',['msg'=>'正しく入力されました！']);
+    }
+
+    //DB::insertによるレコード追加
+    public function add(Request $request){
+        return view('hello.add');
+    }
+
+    public function create(Request $request){
+        $param = [
+            'name' => $request->name,
+            'mail' => $request->mail,
+            'age' => $request->age,
+        ];
+
+        DB::insert('insert into people (name,mail,age) values (:name, :mail, :age)',$param);
+        return redirect('/hello');
     }
 
 }

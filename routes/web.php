@@ -32,3 +32,7 @@ Route::get('hello','HelloController@index');
 
 
 Route::post('hello','HelloController@post');
+
+//DB::insertによるレコード追加
+Route::get('hello/add','HelloController@add');
+Route::post('hello/add','HelloController@create');
