@@ -42,8 +42,8 @@
     {{--<p>これは<middleware>google.com</middleware>へのリンクです。</p>--}}
     {{--<p>これは<middleware>yahoo.co.jp</middleware>へのリンクです。</p>--}}
 
-    //バリデーション
-    <p>{{$msg}}</p>
+    {{--//バリデーション--}}
+    {{--<p>{{$msg}}</p>--}}
     {{--@if(count($errors) > 0)--}}
         {{--<div>--}}
             {{--<ul>--}}
@@ -53,23 +53,23 @@
             {{--</ul>--}}
         {{--</div>--}}
     {{--@endif--}}
-    <table>
-        <form action="/hello" method="post">
-            {{csrf_field()}}
-            @if($errors ->has('name'))
-                <tr><th>ERROR:</th><td>{{$errors -> first('name')}}</td></tr>
-            @endif
-            <tr><th>name:</th><td><input type="text" name="name" value="{{old('name')}}"></td></tr>
+    {{--<table>--}}
+        {{--<form action="/hello" method="post">--}}
+            {{--{{csrf_field()}}--}}
+            {{--@if($errors ->has('name'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('name')}}</td></tr>--}}
+            {{--@endif--}}
+            {{--<tr><th>name:</th><td><input type="text" name="name" value="{{old('name')}}"></td></tr>--}}
 
-            @if($errors ->has('mail'))
-                <tr><th>ERROR:</th><td>{{$errors -> first('mail')}}</td></tr>
-            @endif
-            <tr><th>mail:</th><td><input type="text" name="mail" value="{{old('mail')}}"></td></tr>
+            {{--@if($errors ->has('mail'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('mail')}}</td></tr>--}}
+            {{--@endif--}}
+            {{--<tr><th>mail:</th><td><input type="text" name="mail" value="{{old('mail')}}"></td></tr>--}}
 
-            @if($errors ->has('age'))
-                <tr><th>ERROR:</th><td>{{$errors -> first('age')}}</td></tr>
-            @endif
-            <tr><th>age:</th><td><input type="text" name="age" value="{{old('age')}}"></td></tr>
+            {{--@if($errors ->has('age'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('age')}}</td></tr>--}}
+            {{--@endif--}}
+            {{--<tr><th>age:</th><td><input type="text" name="age" value="{{old('age')}}"></td></tr>--}}
 
             {{--@if($errors ->has('male'))--}}
                 {{--<tr><th>ERROR:</th><td>{{$errors -> first('male')}}</td></tr>--}}
@@ -81,19 +81,32 @@
                 {{--<td><p>女</p><input type="checkbox" name="female" value="{{old('female')}}"></td>--}}
             {{--</tr>--}}
 
-            @if($errors ->has('siteurl'))
-                <tr><th>ERROR:</th><td>{{$errors -> first('siteurl')}}</td></tr>
-            @endif
-            <tr><th>siteurl:</th><td><input type="text" name="siteurl" value="{{old('siteurl')}}"></td></tr>
+            {{--@if($errors ->has('siteurl'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('siteurl')}}</td></tr>--}}
+            {{--@endif--}}
+            {{--<tr><th>siteurl:</th><td><input type="text" name="siteurl" value="{{old('siteurl')}}"></td></tr>--}}
 
-            @if($errors ->has('pass'))
-                <tr><th>ERROR:</th><td>{{$errors -> first('pass')}}</td></tr>
-            @endif
-            <tr><th>password:</th><td><input type="password" name="pass" value="{{old('pass')}}"></td></tr>
+            {{--@if($errors ->has('pass'))--}}
+                {{--<tr><th>ERROR:</th><td>{{$errors -> first('pass')}}</td></tr>--}}
+            {{--@endif--}}
+            {{--<tr><th>password:</th><td><input type="password" name="pass" value="{{old('pass')}}"></td></tr>--}}
 
-            <tr></th><td><input type="submit" value="send"></td></tr>
-        </form>
+            {{--<tr></th><td><input type="submit" value="send"></td></tr>--}}
+        {{--</form>--}}
+    {{--</table>--}}
+
+    //テーブルから一覧表示
+    <table>
+        <tr><th>Name</th><th>Mail</th><th>Age</th></tr>
+        @foreach($items as $item)
+        <tr>
+            <td>{{$item->name}}</td>
+            <td>{{$item->mail}}</td>
+            <td>{{$item->age}}</td>
+        </tr>
+        @endforeach
     </table>
+
 
 @endsection
 

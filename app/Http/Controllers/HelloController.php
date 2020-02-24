@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Requests\HelloRequest;
 use Validator;
+use Illuminate\Support\Facades\DB;
 
 class HelloController extends Controller
 {
@@ -18,7 +19,10 @@ class HelloController extends Controller
 //                ['name'=>'田中幸子','mail'=>'sachiko@tanaka'],
 //                ['name'=>'鈴木一郎','mail'=>'ichiro@suzuki']
 //            ];
-        return view('hello.index',['msg'=>'フォームを入力']);
+
+        $items=DB::select('select * from people');
+
+        return view('hello.index',['items'=>$items]);
     }
 
     public function post(Request $request){
