@@ -44,3 +44,7 @@ Route::post('hello/edit','HelloController@update');
 //DB::deleteによるレコード削除
 Route::get('hello/del','HelloController@delete');
 Route::post('hello/del','HelloController@remove');
+
+//クエリビルダによる特定のIDのレコードを取得
+Route::get('hello/show','HelloController@show');
+

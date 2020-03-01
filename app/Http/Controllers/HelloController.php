@@ -20,14 +20,23 @@ class HelloController extends Controller
 //                ['name'=>'鈴木一郎','mail'=>'ichiro@suzuki']
 //            ];
 
-        if(isset($request->id)){
-            $param = ['id' => $request->id];
-            $items=DB::select('select * from people where id =:id',$param);
-        }else{
-            $items=DB::select('select * from people');
-        }
+//        if(isset($request->id)){
+//            $param = ['id' => $request->id];
+//            $items=DB::select('select * from people where id =:id',$param);
+//        }else{
+//            $items=DB::select('select * from people');
+//        }
+
+        $items = DB::table('people')->get();
 
         return view('hello.index',['items'=>$items]);
+    }
+
+    public function show(Request $request){
+        $id = $request->id;
+        $item =DB::table('people')->where('id',$id)->first();
+
+        return view('hello.show',['item' =>$item]);
     }
 
     public function post(Request $request){
