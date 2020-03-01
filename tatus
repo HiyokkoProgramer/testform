@@ -1,0 +1,175 @@
+commit 4c8ee695953c4bbf14b1d01a0c7fe96ae8616df9
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Mon Feb 24 07:59:56 2020 +0000
+
+    DB::insertによるレコード追加
+
+commit bbb93c99cdb6189db2ea3611b54ff080fd3a3fe9
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Mon Feb 24 04:09:05 2020 +0000
+
+    クエリビルダを使ってDBのデータを表示する
+
+commit dc90e9c6285e653d45bc23353fe828c68f927729
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Fri Feb 21 02:38:29 2020 +0000
+
+    バリデータを作ってリダイレクトする
+
+commit 3ff1c0259602f8f0d30f0b5c86ee47c579bf48d4
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Thu Feb 20 02:39:41 2020 +0000
+
+    フォームリクエストを使ったバリデーション
+
+commit dcd415ae82351ece9e8aabfbb69217ce1efe5c87
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Thu Feb 20 01:18:12 2020 +0000
+
+    バリデーション
+
+commit 7593a3d78a1682c595d0ef4448241dc279be56f4
+Author: Kaori Toki <blogkankei.senyou@gmail.com>
+Date:   Wed Feb 19 15:14:20 2020 +0900
+
+    test commit form phpstorm
+
+commit 5a0c6c47139e30543eaf42a8a18bafa84ecbaf95
+Author: Kaori Toki <blogkankei.senyou@gmail.com>
+Date:   Wed Feb 19 15:13:10 2020 +0900
+
+    test commit form phpstorm
+
+commit a5569ae58971a3ae49aac2ed177ccd425aa17e53
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Wed Feb 19 02:08:58 2020 +0000
+
+    レスポンスの操作
+
+commit e2a385e940cc2c9548520fde8028946b455c7f16
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Wed Feb 19 01:06:29 2020 +0000
+
+    ミドルウェアを挟めてみる
+
+commit a94764df727344666d9e70ef7300ded41a7d7d10
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Tue Feb 18 04:16:46 2020 +0000
+
+    ビューコンポーザクラスを使ってパスを表示する
+
+commit bbf191bc2f7126e19bedc7a9ae1e51f9f6a58088
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Tue Feb 18 03:15:50 2020 +0000
+
+    無名クラスを使ったビューコンポーザの作成
+
+commit bcd8f78fd978ba32493e4c2a2e566ab88506b5bf
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Tue Feb 18 00:58:46 2020 +0000
+
+    eachによる表示
+
+commit f293bf267c86421b3433f796faae5a80fdad3827
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Mon Feb 17 03:26:58 2020 +0000
+
+    サブビューによる表示
+
+commit de999e48048f05789585e6e65c4a8963502d7a62
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Mon Feb 17 03:23:04 2020 +0000
+
+    コンポーネントの作成と表示
+
+commit 1ca0d20e246a4bc5a0e379831bcc6314b043dcb9
+Merge: 854f332 7038775
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 05:44:35 2020 +0000
+
+    Merge branch 'master' of github.com:HiyokkoProgramer/testform
+
+commit 854f332b36be5e292b45a89aa86333221accea9a
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 05:43:49 2020 +0000
+
+    ベースレイアウト作成
+
+commit 3bb83e9a657f71d9caca1eba01cc08d35596127c
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 04:49:50 2020 +0000
+
+    for、contiloopディレクティブの例
+
+commit 7038775b314273561e6e0e989d6ce09dd3c8e0a3
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 04:49:50 2020 +0000
+
+    foreachãloopディレクティブの例
+
+commit 255e25149d0fdf8669e194608da2037a2c44df6a
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 04:36:55 2020 +0000
+
+    for、continue、breakディレクティブの例
+
+commit 25346aae051a1ec3118baf7c7b135d44f4aea1fd
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 04:28:36 2020 +0000
+
+    foreachディレクティブの例
+
+commit 19797e7238f84b674752d90fa9355eed878c607f
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 04:21:26 2020 +0000
+
+    foreachディレクティブの例
+
+commit 395b5f0bb8cf2b60dee91c84745fe83f0a4b19e4
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 15 04:12:43 2020 +0000
+
+    @isset test
+
+commit 93799dbdd37843a32ff02a6212a363152c7008dd
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Wed Feb 12 01:18:12 2020 +0000
+
+    Readme edit
+
+commit 2ceb4272c28b7e4fce08e69b2abf6bd687b0f92d
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Tue Feb 11 09:13:03 2020 +0000
+
+    develop edit
+
+commit fb4b3f2447d5731e2ab6bc85de3c4871ce59a969
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Tue Feb 11 08:50:03 2020 +0000
+
+    Develop first
+
+commit 5cac2c518526b2d09422bbc19186f30cbd527bd4
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Tue Feb 11 08:27:49 2020 +0000
+
+    read.me edit
+
+commit 671296d0a81bf65bf0a2dbcdaa37b0d60b0a408a
+Merge: 2a32532 eecd4f8
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Mon Feb 10 05:51:16 2020 +0000
+
+    Merge branch 'branchA'
+
+commit eecd4f8e1dcdbbf4409aac85b38ae36e92fee69f
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Mon Feb 10 04:56:03 2020 +0000
+
+    brachA test
+
+commit 2a32532b57faabd42a53aa7d1f7b6f76e809ad59
+Author: HiyokkoProgramer <blogkankei.senyou@gmail.com>
+Date:   Sat Feb 8 13:15:04 2020 +0000
+
+    laravel commit

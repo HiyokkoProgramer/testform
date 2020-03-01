@@ -40,3 +40,7 @@ Route::post('hello/add','HelloController@create');
 //DB::updateによるレコード追加
 Route::get('hello/edit','HelloController@edit');
 Route::post('hello/edit','HelloController@update');
+
+//DB::deleteによるレコード削除
+Route::get('hello/del','HelloController@delete');
+Route::post('hello/del','HelloController@remove');
